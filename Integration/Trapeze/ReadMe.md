@@ -1,0 +1,1 @@
+# Approximate calculation of areas by the trapezium method.
