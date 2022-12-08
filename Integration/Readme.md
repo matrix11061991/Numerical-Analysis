@@ -1,5 +1,5 @@
 # Integration
-A Simple Method for Numerical Integration in Python
+A Simple Method for Numerical Integration in Python langage
 
 **[📁 Rectangle-Method](/Integration/Rectangle)**
 
