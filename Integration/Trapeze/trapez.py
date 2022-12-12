@@ -1,12 +1,12 @@
-import scipy.integrate as integrate
+def trapeze(f, a, b, n):
+    # Étape 1 : déterminer l'espacement entre les points de la grille
+    h = (b-a)/n
 
-def f(x):
-    # La fonction à intégrer
-    return x**2
+    # Étape 2 : calculer la valeur de l'intégrale en utilisant la méthode des trapèzes
+    resultat = 0.5*(f(a) + f(b))
+    for i in range(1, n):
+        resultat += f(a + i*h)
+    resultat *= h
 
-a = 0 # limite inférieure de l'intégrale
-b = 2 # limite supérieure de l'intégrale
+    return resultat
 
-approximation = integrate.trapezoid(f, a, b)
-
-print(approximation)
